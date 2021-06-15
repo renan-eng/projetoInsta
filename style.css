@@ -19,7 +19,7 @@ body{
 
 .instagram-wrapper{
     display: flex;
-    width: 70%;
+    width: 60%;
     height: 100vh;
     justify-content: start;
     align-items: center;
@@ -36,6 +36,97 @@ body{
 
 .instagram-right{
     display: flex;
-    border: 1px solid;
+    align-items: center;/*horizontal*/
+    flex-direction: column;
+    justify-content: space-around; /*vertical*/
+    width: 40%;
+    min-height: 34rem;
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 80%;
+    padding: 1.3rem 0;
+}
+
+.group:nth-child(1){
+    min-height: 19rem;
+}
+
+.instagram-logo{
+    height: 3rem;
+}
+
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile-photo img{
+    height: 6rem;
+}
+
+.instagram-login{
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+.instagram-logout{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account{
+    color: rgb(160, 160, 160);
+}
+
+.link-blue{
+    color: #0095f6;
+}
+
+.instagram-apps{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.get-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
     
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1){
+    background-image: url(./appstore.png);
+}
+
+.app-download:nth-child(2){
+    background-image: url(./googleplay.png);
 }
